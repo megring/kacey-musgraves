@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/kacey-musgraves/static/css/main.dd9d3e9b.chunk.css",
+    "main.js": "/kacey-musgraves/static/js/main.f236c0b6.chunk.js",
+    "main.js.map": "/kacey-musgraves/static/js/main.f236c0b6.chunk.js.map",
+    "runtime-main.js": "/kacey-musgraves/static/js/runtime-main.284c0082.js",
+    "runtime-main.js.map": "/kacey-musgraves/static/js/runtime-main.284c0082.js.map",
+    "static/js/2.1cae2a12.chunk.js": "/kacey-musgraves/static/js/2.1cae2a12.chunk.js",
+    "static/js/2.1cae2a12.chunk.js.map": "/kacey-musgraves/static/js/2.1cae2a12.chunk.js.map",
+    "index.html": "/kacey-musgraves/index.html",
+    "precache-manifest.4a418e0ea16541efbdc37228056f4c2d.js": "/kacey-musgraves/precache-manifest.4a418e0ea16541efbdc37228056f4c2d.js",
+    "service-worker.js": "/kacey-musgraves/service-worker.js",
+    "static/css/main.dd9d3e9b.chunk.css.map": "/kacey-musgraves/static/css/main.dd9d3e9b.chunk.css.map",
+    "static/media/GoldenHour.jpg": "/kacey-musgraves/static/media/GoldenHour.e22fa01c.jpg",
+    "static/media/KaceyXMas.jpg": "/kacey-musgraves/static/media/KaceyXMas.632805c8.jpg",
+    "static/media/PageantMaterial.jpg": "/kacey-musgraves/static/media/PageantMaterial.7f1bcfc7.jpg",
+    "static/media/SameTrailer.png": "/kacey-musgraves/static/media/SameTrailer.9a6dbf16.png",
+    "static/media/logo.svg": "/kacey-musgraves/static/media/logo.25bf045c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.284c0082.js",
+    "static/js/2.1cae2a12.chunk.js",
+    "static/css/main.dd9d3e9b.chunk.css",
+    "static/js/main.f236c0b6.chunk.js"
+  ]
+}
