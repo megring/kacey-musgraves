@@ -1,13 +1,234 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+nav {
+    height: 90px;
+    font-family: ltc-bodoni-175, serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 1em;
+    background: url(http://www.csszengarden.com/218/img-lg-horiz-border.png) repeat-x top right, url(http://www.csszengarden.com/218/img-lg-horiz-border.png) repeat-x bottom left;
+    background-size: 30em;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+nav ul {
+    list-style: none;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    height: 100%;
 }
+
+nav ul a {
+    color: #262624;
+    text-decoration: none;
+}
+
+nav ul a:hover { 
+    color: #f7644d;
+}
+
+.active {
+    color: #f7644d !important;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 0.4em;
+    font-size: 3em;
+}
+
+a {
+    color: #e5452c;
+    font-weight: 700;
+}
+
+h2, h3, hr, .image-wrapper{
+    text-align: center;
+}
+
+.image-wrapper > img{
+    max-width: 900px;
+    width: 85vw;
+}
+
+#zen-participation {
+    white-space: pre-line;
+}
+
+.flex-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.album-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+}
+
+.album-container > div {
+    margin: 2%;
+}
+
+.album-info {
+    text-align: center;
+}
+
+.album-info h4 {
+    margin-bottom: 10px;
+}
+
+.img-container {
+    position: relative;
+    max-width: 400px;
+    margin: auto;
+}
+
+.album-cover {
+    max-width: 400px;
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    max-width: 400px;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.overlay-text {
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.img-container:hover .overlay {
+    opacity: 1;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.img-container:hover .album-cover {
+    filter:blur(1px);
+}
+
+.track-listing h4 {
+    margin-bottom: 5px;
+}
+
+.email-form {
+    text-align: center;
+    margin-bottom: 6%;
+}
+
+.email-form h3 {
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-bottom: 3%;
+    font-size: 1.3em;
+}
+
+input {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline;
+    min-width: 275px;
+}
+
+button {
+    background-color: #ffb14d;
+    padding: 16px 32px;
+    color: white;
+    border: none;
+    font-family: ltc-bodoni-175, serif;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#footer-text {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* animation */
+@keyframes titleAnimation {
+    from { 
+        color: gray; 
+        opacity: 0;
+        transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+    }
+    to {
+        color: white;
+        opacity: 1;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+    }
+}
+
+.page-title {
+    opacity: 0;
+    animation: titleAnimation 0.8s ease-in forwards;
+}
+
+/* media queries */
+@media (max-width: 800px) {
+    .album-container {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    
+    .album-container > div {
+        margin: 2% auto;
+    }
+    
+    nav {
+        font-size: 20px;
+    }
+    .participation p {
+        column-count: 1 !important;
+    }
+    
+     #footer-text {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 460px) {
+    nav {
+        height: 150px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+    }
+}
+
