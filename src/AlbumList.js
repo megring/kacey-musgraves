@@ -5,16 +5,16 @@ const AlbumList = () => (
     <nav>
         <ul>
             <li>
-                <NavLink exact activeClassName='active' to={process.env.PUBLIC_URL + '/'}>Golden Hour</NavLink>
+                <NavLink exact activeClassName='active' to='/'>Golden Hour</NavLink>
             </li>
             <li>
-                <NavLink activeClassName='active' to={process.env.PUBLIC_URL + '/KaceyXMas'}>A Very Kacey Christmas</NavLink>
+                <NavLink activeClassName='active' to='/KaceyXMas'>A Very Kacey Christmas</NavLink>
             </li>
             <li>
-                <NavLink activeClassName='active' to={process.env.PUBLIC_URL + '/PageantMaterial'}>Pageant Material</NavLink>
+                <NavLink activeClassName='active' to='/PageantMaterial'>Pageant Material</NavLink>
             </li>
             <li>
-                <NavLink activeClassName='active' to={process.env.PUBLIC_URL + '/SameTrailer'}>Same Trailer, Different Park</NavLink>
+                <NavLink activeClassName='active' to='/SameTrailer'>Same Trailer, Different Park</NavLink>
             </li>
         </ul>
     </nav>

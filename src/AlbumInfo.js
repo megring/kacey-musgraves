@@ -7,10 +7,10 @@ import SameTrailer from './SameTrailer'
 
 const AlbumInfo = () => (
     <Switch>
-        <Route exact path={process.env.PUBLIC_URL + '/'} component={GoldenHour} />
-        <Route path={process.env.PUBLIC_URL + '/KaceyXMas'} component={KaceyXMas} />
-        <Route path={process.env.PUBLIC_URL + '/PageantMaterial'} component={PageantMaterial} />
-        <Route path={process.env.PUBLIC_URL + '/SameTrailer'} component={SameTrailer} />
+        <Route exact path='/' component={GoldenHour} />
+        <Route path='/KaceyXMas' component={KaceyXMas} />
+        <Route path='/PageantMaterial' component={PageantMaterial} />
+        <Route path='/SameTrailer' component={SameTrailer} />
     </Switch>
 )
 
